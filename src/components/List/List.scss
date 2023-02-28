@@ -1,0 +1,57 @@
+@use '../../sass/' as *;
+
+.list{
+    max-width: 90%;
+    margin: auto;
+    margin-top: 20rem;
+    & > h2{
+        font-size: 4rem;
+
+    }
+    &__group{
+        display: grid;
+        grid-template-columns: repeat(3 , minmax(0,1fr));
+        gap: 10rem;
+        @include desktop{
+            grid-template-columns: repeat(2 , minmax(0,1fr));
+        }
+        @include tablet{
+            grid-template-columns: repeat(1 , minmax(0,1fr));
+
+        }
+    }
+}
+.card{
+    cursor: pointer;
+    margin-top: 2rem;
+    & > * ~ * {
+        margin-top: 1.4rem;
+        margin-left: 1rem;
+    }
+    & > img{
+        width: 100%;
+        border-radius: 1.4rem;
+    }
+    & > h4{
+        text-transform: capitalize;
+        font-size: 2rem;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 0.8rem;
+            height: 0.6rem;
+            background-color: $primary-color;
+            top: 50%;
+            left: -1.2rem;
+            transform: translateY(-50%);
+        }
+    }
+    & > p{
+        color: #595959;
+        font-weight: 700;
+        @include desktop{
+            font-size: 1.5rem;
+        }
+    }
+}

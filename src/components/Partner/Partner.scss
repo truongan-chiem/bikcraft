@@ -1,0 +1,30 @@
+@use '../../sass/' as *;
+
+.Partner{
+    
+    max-width: 80%;
+    margin: 7rem auto;
+    & > h2{
+        font-size: 4rem;
+    }
+    &__group{
+        display: grid;
+        grid-template-columns: repeat(4 , minmax(0,1fr));
+        gap: 5rem;
+        width: 80%;
+        margin:4rem auto;
+        & > * {
+            align-self: center;
+            justify-self: center;
+        }
+        @include desktop{
+            grid-template-columns: repeat(2 , minmax(0,1fr));
+            & > svg{
+                width: 12rem;
+            }
+        }
+        @include mobile{
+            grid-template-columns: repeat(1 , minmax(0,1fr));
+        }
+    }
+}

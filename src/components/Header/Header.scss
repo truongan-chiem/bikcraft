@@ -1,0 +1,35 @@
+@use '../../sass/' as *;
+
+.header{
+    background-color: $black;
+    color:  $white;
+
+    height: 8rem;
+    &___bg{
+        max-width: 80%;
+        margin: auto;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center
+        ;
+    }
+    &__logo{
+        font-size: 3rem;
+    }
+    &__nav{
+        display: flex;
+        align-items: center;
+        & > *{
+            margin-right: 5rem;
+        }
+        font-size: 1.6rem;
+        & > li{
+            cursor: pointer;
+            &:hover{
+                color : $primary-color;
+                transition: color 0.3s ease;
+            }
+        }
+    }
+}

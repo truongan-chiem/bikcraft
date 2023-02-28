@@ -1,0 +1,26 @@
+@use './sass/' as *;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+  overflow-y: overlay;
+}
+.container{
+  max-width: 80%;
+  margin: auto;
+}
+html {
+  font-size: 62.5%;
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+p,span,h1,h2,h3,h4,h5,h6{
+  pointer-events: none;
+}

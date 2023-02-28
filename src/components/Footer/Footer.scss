@@ -1,0 +1,70 @@
+@use '../../sass/' as *;
+
+.footer{
+    background-color: $black;
+    padding: 4rem 0;
+    color: $text-second ;
+    &__container{
+        max-width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns:repeat(3 ,  minmax(200px,1fr));
+        gap: 2rem;
+        @include tablet{
+            grid-template-columns:repeat(2 ,  minmax(200px,1fr));
+        }
+        @include mobile{
+            grid-template-columns:repeat(1 ,  minmax(200px,1fr));
+        }
+    }
+    &__logo{
+        font-size: 4rem;
+        color: $white;
+        text-transform: lowercase;
+    }
+    &__contact{
+        & > h2{
+            font-size: 2rem;
+            color: $white;
+            text-transform: uppercase;
+        }
+        &__box{
+            margin: 1.5rem 0;
+            font-size: 1.2rem;
+            & > * ~ * {
+                margin-top: 0.8rem;
+            }
+        }
+        &__social{
+            display: flex;
+            align-items: center;
+            & > * {
+                width: 1.5rem;
+                height: 1.5rem;
+                cursor: pointer;
+            }
+            & > * ~ *{
+                margin-left: 2rem;
+            }
+        }
+    }
+    &__info{
+        & > h2{
+            font-size: 2rem;
+            color: $white;
+            text-transform: uppercase;
+        }
+        &__box{
+            margin: 1.5rem 0;
+            & > * ~ * {
+                margin-top: 1rem;
+            }
+        }
+    }
+    &__close{
+        max-width: 85%;
+        margin: auto;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+}
