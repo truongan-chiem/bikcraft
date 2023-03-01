@@ -17,7 +17,7 @@ const Advanced  = () => {
                   <Box icon={<Tracker />} title='Tracker' content={"We know how precious your Bikcraft is, so we've added tracking and anti-theft systems to ensure your peace of mind."}/>
               </div>
           </div>
-          <div className='Advanced__img'>
+          <div className='Advanced__img' data-aos = "fade-right" data-aos-delay="100">
             <img  src={img} alt="" />
           </div>
       </div>

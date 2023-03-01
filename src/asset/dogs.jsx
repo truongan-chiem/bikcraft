@@ -3,8 +3,8 @@ import React from "react";
 const dogs = () => {
   return (
     <svg
-      width="152"
-      height="39"
+      width="140"
+      height="37"
       viewBox="0 0 152 39"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

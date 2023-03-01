@@ -3,8 +3,8 @@ import React from "react";
 const ranek = () => {
   return (
     <svg
-      width="148"
-      height="34"
+      width="140"
+      height="37"
       viewBox="0 0 148 34"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

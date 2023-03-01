@@ -3,8 +3,8 @@ import React from "react";
 const handel = () => {
   return (
     <svg
-      width="139"
-      height="50"
+      width="140"
+      height="37"
       viewBox="0 0 139 50"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

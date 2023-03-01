@@ -3,8 +3,8 @@ import React from "react";
 const lescone = () => {
   return (
     <svg
-      width="208"
-      height="41"
+      width="140"
+      height="37"
       viewBox="0 0 208 41"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

@@ -13,7 +13,7 @@ const Banner = () => {
                   Your Select
               </button>
           </div>
-          <div className='banner__img'>
+          <div className='banner__img' data-aos='fade-in'>
             <img src={logo} alt="" />
           </div>
        </div >

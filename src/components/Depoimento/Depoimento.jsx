@@ -6,9 +6,9 @@ import Right from '../../asset/ngoacphai'
 const Depoimento = () => {
   return (
     <div className='depoimento'>
-        <img src={img} alt="" />
-        <div className='depoimento__content'>
-            <h2 className="depoimento__content__title">
+        <img src={img} alt="" data-aos = "fade-right"/>
+        <div className='depoimento__content' >
+            <h2 className="depoimento__content__title" data-aos = "fade-left"data-aos-delay="700">
             <Left />
             Cycling has always been my passion, what the people at Bikcraft have done is intensify my love for this activity. I recommend it to everyone I love.
             <Right />

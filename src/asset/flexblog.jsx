@@ -3,8 +3,8 @@ import React from "react";
 const flexblog = () => {
   return (
     <svg
-      width="164"
-      height="38"
+      width="140"
+      height="37"
       viewBox="0 0 164 38"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

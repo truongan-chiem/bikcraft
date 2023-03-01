@@ -3,8 +3,8 @@ import React from "react";
 const surfbot = () => {
   return (
     <svg
-      width="200"
-      height="49"
+      width="140"
+      height="37"
       viewBox="0 0 200 49"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
